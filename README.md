@@ -12,17 +12,13 @@ This repo is laid out so that it matches as closely as possible the actual on-di
 | `styles/freecad-dark/` | `styles/freecad-dark/` in the phpBB root | the `FreeCAD-Dark` style, child of `prosilver` |
 | `freecad-assets/` | `freecad-assets/` in the phpBB root, served at `/freecad-assets/` | Bootstrap 3.3.5 CSS and JS, the site fonts, `freecad.css`, and the favicons, shared by both styles |
 
-## History
-
-The styles were previously tracked in [FreeCAD-Homepage](https://github.com/FreeCAD/FreeCAD-Homepage) under `themes/forum/styles`, but the files running on the live forum had since been edited in place. This repository starts from the files that were live on the forum in October 2026, with three differences: files that nothing referenced were left out (Font Awesome 4.3.0, unused logo images including the pre-2024 FreeCAD logo, two unused fonts in the dark style, and the ColorizeIt tool's configuration files), the header logo was replaced by the equivalent wordmark from the FPA's official logo kit so that its source is known, and the icons were moved from GLYPHICONS PRO to Font Awesome (see below). `freecad-assets/` holds copies of files the styles used to load from `www.freecad.org`; the only change from those is that `css/freecad.css` refers to its fonts by relative paths (`../fonts/...`) so that they resolve inside `freecad-assets/`.
-
 ## Making Changes
 
 Please submit changes as normal pull requests to this repo. Changes reach the forum only when a project Maintainer or forums manager explicitly runs the deployment workflow. There is (currently) no staging or test server available, all changes go directly to the live forum.
 
 ## Icons
 
-Both styles draw their icons with Font Awesome 4.7, which phpBB itself ships (`assets/css/font-awesome.min.css`) and the headers load through `{T_FONT_AWESOME_LINK}`; it is not part of this repository. The styles that were live before this repository used the commercially licensed GLYPHICONS PRO icon font, whose license forbids redistribution. Those icons were replaced with their Font Awesome equivalents, and GLYPHICONS PRO is listed in `.gitignore` so that it cannot be added back by accident.
+Both styles draw their icons with Font Awesome 4.7, which phpBB itself ships (`assets/css/font-awesome.min.css`) and the headers load through `{T_FONT_AWESOME_LINK}`; it is not part of this repository.
 
 ## License
 
@@ -31,7 +27,7 @@ The repository as a whole is distributed under the GNU General Public License, v
 | Component | Path | License |
 |---|---|---|
 | phpBB `prosilver`-derived templates and theme | `styles/*/template/`, `styles/*/theme/` | GPL-2.0 ([phpBB][phpbb]) |
-| Elegance style by Vjacheslav Trushkin, on which both styles are based | `styles/*/` | BSD-2-Clause, © 2015 Vjacheslav Trushkin; see `styles/*/license.txt`, which excludes `theme/fonts/` |
+| Elegance style by Vjacheslav Trushkin, on which both styles are based | `styles/*/` | BSD-2-Clause, © 2015 Vjacheslav Trushkin; see `styles/*/license.txt` |
 | FreeCAD's changes and additions to both styles (by Yorik van Havre and others), including `styles/freecad-dark/theme/freecad.css` | `styles/*/` | previously published under the LGPL-2.1 in [FreeCAD-Homepage][homepage]; distributed here under the GPL-2.0, as section 3 of the LGPL-2.1 permits |
 | Bootstrap 3.3.5 | `freecad-assets/css/bootstrap-3.3.5.min.css`, `freecad-assets/js/bootstrap-3.3.5.min.js` | MIT, © 2011-2015 Twitter, Inc.; see `freecad-assets/LICENSE-Bootstrap.txt` |
 | GLYPHICONS Halflings font, as included in Bootstrap 3.3.5 | `freecad-assets/fonts/glyphicons-halflings-regular.*` | © 2014 Jan Kovařík; made available by its author for Bootstrap free of cost, under Bootstrap's license |
