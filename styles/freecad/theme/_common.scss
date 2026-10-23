@@ -1194,6 +1194,13 @@ ul.linklist.bulletin > li.no-bulletin:before {
 	position: relative;
 }
 
+// Dropdowns start hidden; phpBB's JavaScript shows them. The style's own
+// templates also add "fhidden", but templates inherited from prosilver
+// (pagination.html, ucp_pm_message_header.html) do not.
+.dropdown-container > .dropdown {
+	display: none;
+}
+
 .dropdown-container-right {
 	float: right;
 }
