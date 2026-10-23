@@ -1,3 +1,4 @@
 # GLYPHICONS PRO is commercially licensed and may not be redistributed. The
-# styles use it, but it lives only on the server; see the README.
+# styles no longer use it (see the README's Icons section); this keeps a
+# stray copy from being committed.
 styles/*/theme/fonts/glyphicons-pro-*/

@@ -31,7 +31,7 @@
 %imageset-gi {
 	@extend %imageset-glyph;
 	&:after {
-		font-family: 'Glyphicons Regular', 'Glyphicons';
+		font-family: FontAwesome;
 	}
 }
 
@@ -125,7 +125,7 @@ span.imageset {
 	@extend %imageset-gi;
 	@extend %imageset-12;
 	&:after {
-		content: '\E063';	// glyphicons-paperclip
+		content: '\f0c6';	// fa-paperclip
 	}
 }
 .imageset.icon_topic_latest {
@@ -167,7 +167,7 @@ span.imageset {
 	@extend %imageset-gi;
 	@extend %imageset-12;
 	&:after {
-		content: '\E042';	// glyphicons-charts
+		content: '\f080';	// fa-bar-chart
 	}
 }
 
@@ -175,13 +175,13 @@ span.imageset {
 	@extend %imageset-gi;
 	@extend %imageset-12;
 	&:after {
-		content: '\E188';	// glyphicons-more
+		content: '\f141';	// fa-ellipsis-h
 	}
 	&:hover:after {
-		content: '\E602';	// glyphicons-chevron-down
+		content: '\f078';	// fa-chevron-down
 	}
 	.dropdown-up &:hover:after {
-		content: '\E601';	// glyphicons-chevron-up
+		content: '\f077';	// fa-chevron-up
 	}
 }
 
@@ -224,14 +224,14 @@ span.imageset {
 %icon-image-gi {
 	@extend %icon-image;
 	&:after {
-		font-family: 'Glyphicons Regular', 'Glyphicons';
+		font-family: FontAwesome;
 	}
 }
 
 %icon-search-old {
 	@extend %icon-image-gi;
 	&:after {
-		content: '\E028';	// glyphicons-search
+		content: '\f002';	// fa-search
 	}
 }
 
@@ -246,13 +246,13 @@ span.imageset {
 .icon-acp {
 	@extend %icon-image-gi;
 	&:after {
-		content: '\E271';	// glyphicons-shield
+		content: '\f132';	// fa-shield
 	}
 }
 .icon-bookmark {
 	@extend %icon-image-gi;
 	&:after {
-		content: '\E073';	// glyphicons-bookmark
+		content: '\f02e';	// fa-bookmark
 		margin-left: -1px;
 		margin-right: -1px;
 	}
@@ -284,13 +284,13 @@ span.imageset {
 .icon-faq {
 	@extend %icon-image-gi;
 	&:after {
-		content: '\E195';	// glyphicons-circle-question-mark
+		content: '\f059';	// fa-question-circle
 	}
 }
 .icon-home {
 	@extend %icon-image-gi;
 	&:after {
-		content: '\E021';	// glyphicons-home
+		content: '\f015';	// fa-home
 	}
 	&.breadcrumbs:after {
 		text-align: left;
@@ -311,7 +311,7 @@ span.imageset {
 .icon-mark {
 	@extend %icon-image-gi;
 	&:after {
-		content: '\E153';	// glyphicons-check
+		content: '\f00c';	// fa-check
 		margin-top: -8px;
 	}
 }
@@ -420,7 +420,7 @@ ul.linklist.bulletin > li.small-icon.icon-team:before { @extend .icon-team:befor
 .icon-ucp {
 	@extend %icon-image-gi;
 	&:after {
-		content: '\E281';	// glyphicons-settings
+		content: '\f1de';	// fa-sliders
 	}
 }
 .icon-unsubscribe {
@@ -432,25 +432,25 @@ ul.linklist.bulletin > li.small-icon.icon-team:before { @extend .icon-team:befor
 .icon-new-posts {
 	@extend %icon-image-gi;
 	&:after {
-		content: '\E245';	// glyphicons-conversation
+		content: '\f086';	// fa-comments
 	}
 }
 .icon-forums {
 	@extend %icon-image-gi;
 	&:after {
-		content: '\E245';	// glyphicons-conversation
+		content: '\f086';	// fa-comments
 	}
 }
 .icon-chat {
 	@extend %icon-image-gi;
 	&:after {
-		content: '\E246';	// glyphicons-chat
+		content: '\f0e6';	// fa-comments-o
 	}
 }
 .icon-time {
 	@extend %icon-image-fa;
 	&:after {
-		// content: '\E055';	// glyphicons-clock
+		// content: '\f017';	// fa-clock-o
 		content: '\f017';	// fa-clock-o
 	}
 }

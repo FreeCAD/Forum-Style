@@ -78,7 +78,7 @@ $button-outer-height:	$button-inner-height + $button-border-width * 2;
 }
 
 %icon-button-gi {
-	font-family: 'Glyphicons Regular', 'Glyphicons';
+	font-family: FontAwesome;
 }
 
 %icon-button-visible {
@@ -131,7 +131,7 @@ $button-outer-height:	$button-inner-height + $button-border-width * 2;
 .post-icon:before, .newpm-icon:before {
 	@extend %icon-button;
 	@extend %icon-button-gi;
-	content: '\E151';	// glyphicons-edit
+	content: '\f040';	// fa-pencil
 	margin-left: 5px;
 	font-size: 12px;
 }
@@ -145,7 +145,7 @@ $button-outer-height:	$button-inner-height + $button-border-width * 2;
 .locked-icon:before {
 	@extend %icon-button;
 	@extend %icon-button-gi;
-	content: '\E204';	// glyphicons-lock
+	content: '\f023';	// fa-lock
 	margin-left: 5px;
 	.buttons > & {
 		top: 0;
@@ -178,7 +178,7 @@ $button-outer-height:	$button-inner-height + $button-border-width * 2;
 
 .search-icon:before {
 	@extend %icon-button-gi;
-	content: '\E028';	// glyphicons-search
+	content: '\f002';	// fa-search
 	font-size: 13px;
 	width: 15px;
 	padding-right: 1px;
@@ -186,7 +186,7 @@ $button-outer-height:	$button-inner-height + $button-border-width * 2;
 
 .search-adv-icon:before {
 	@extend %icon-button-gi;
-	content: '\E137';	// glyphicons-cogwheel
+	content: '\f013';	// fa-cog
 	font-size: 13px;
 }
 
@@ -256,7 +256,7 @@ ul.linklist.bulletin > li.small-icon:before {
 }
 
 %contact-icon-gi {
-	font-family: 'Glyphicons Regular', 'Glyphicons';
+	font-family: FontAwesome;
 }
 
 .contact-icons .last-cell {
@@ -274,11 +274,11 @@ ul.linklist.bulletin > li.small-icon:before {
 // Profile icons
 .pm-icon:after {
 	@extend %contact-icon-gi;
-	content: '\E245';	// glyphicons-conversation
+	content: '\f086';	// fa-comments
 }
 .email-icon:after {
 	@extend %contact-icon-gi;
-	content: '\2709';	// glyphicons-envelope
+	content: '\f0e0';	// fa-envelope
 }
 .jabber-icon:after {
 	content: '\f0eb';	// fa-lightbulb-o
@@ -286,14 +286,14 @@ ul.linklist.bulletin > li.small-icon:before {
 }
 .phpbb_icq-icon:after {
 	@extend %contact-icon-gi;
-	content: '\2698';	// glyphicons-flower
+	content: '\f27b';	// fa-commenting-o
 }
 .phpbb_wlm-icon:after {
 	content: '\f007';	// fa-user
 }
 .phpbb_aol-icon:after {
 	@extend %contact-icon-gi;
-	content: '\E563';	// glyphicons-person-walking
+	content: '\f2c0';	// fa-user-o
 }
 .phpbb_website-icon:after {
 	content: '\f08e';	// fa-external-link
@@ -388,7 +388,7 @@ ul.linklist.bulletin > li.small-icon:before {
 .edit-icon:before {
 	@extend %icon-button;
 	@extend %icon-button-gi;
-	content: '\E151';	// glyphicons-edit
+	content: '\f040';	// fa-pencil
 	margin-right: -2px;
 	font-size: 11px;
 	margin-top: 2px;
@@ -396,7 +396,7 @@ ul.linklist.bulletin > li.small-icon:before {
 .warn-icon:before {
 	@extend %icon-button;
 	@extend %icon-button-gi;
-	content: '\E525';	// glyphicons-user-alert
+	content: '\f071';	// fa-exclamation-triangle
 	padding-right: 1px;
 }
 .delete-icon:before {

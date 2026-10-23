@@ -617,7 +617,7 @@ $nav-alert-font-size:		9px !default;
 			font-family: FontAwesome;
 		}
 		%glyph-gi {
-			font-family: 'Glyphicons Regular', 'Glyphicons';
+			font-family: FontAwesome;
 		}
 
 		.responsive-menu .nav-link {
@@ -626,7 +626,7 @@ $nav-alert-font-size:		9px !default;
 				@extend %glyph-fa;
 				content: '\f0c9';	// fa-bars
 				// @extend %glyph-gi;
-				// content: '\E159';	// glyphicons-show-lines
+				// content: '\f0c9';	// fa-bars
 			}
 		}
 
@@ -639,7 +639,7 @@ $nav-alert-font-size:		9px !default;
 			}
 			&:after {
 				@extend %glyph-gi;
-				content: '\E044';	// glyphicons-group
+				content: '\f0c0';	// fa-users
 			}
 			@media (max-width: 550px) {
 				@extend %glyph-only-media;
@@ -670,7 +670,7 @@ $nav-alert-font-size:		9px !default;
 			@extend %glyph-only;
 			&:after {
 				@extend %glyph-gi;
-				content: '\E130';	// glyphicons-message-new
+				content: '\f0e0';	// fa-envelope
 				margin-top: ceil($nav-primary-glyph-margin * 1.3);
 			}
 		}
@@ -696,7 +696,7 @@ $nav-alert-font-size:		9px !default;
 			@extend %glyph-only;
 			&:after {
 				@extend %glyph-gi;
-				content: '\E271';	// glyphicons-shield
+				content: '\f132';	// fa-shield
 			}
 		}
 
@@ -704,7 +704,7 @@ $nav-alert-font-size:		9px !default;
 			@extend %glyph-only;
 			&:after {
 				@extend %glyph-gi;
-				content: '\E195';	// glyphicons-circle-question-mark
+				content: '\f059';	// fa-question-circle
 			}
 		}
 
@@ -1093,8 +1093,8 @@ ul.linklist li.responsive-menu a.responsive-menu-link {
 	&:before {
 		// content: '\f0c9';	// fa-bars
 		// font-family: FontAwesome;
-		content: '\E159';	// glyphicons-show-lines
-		font-family: 'Glyphicons Regular', 'Glyphicons';
+		content: '\f0c9';	// fa-bars
+		font-family: FontAwesome;
 		position: absolute;
 		left: 0;
 		top: 50%;
@@ -1109,8 +1109,8 @@ ul.linklist li.responsive-menu a.responsive-menu-link {
 		text-indent: 0;
 	}
 	&:hover:before {
-		// font-family: 'Glyphicons Regular', 'Glyphicons';
-		content: '\E602';	// glyphicons-chevron-down
+		// font-family: FontAwesome;
+		content: '\f078';	// fa-chevron-down
 	}
 }
 
@@ -1329,7 +1329,7 @@ $dropdown-content-line-height:	$line-height !default;
 	display: none !important;
 }
 
-.dropdown-trigger > i.glyphicons, .dropdown-trigger > i.fa {
+.dropdown-trigger > i.fa {
 	display: inline;
 	line-height: inherit;
 	top: 0;
