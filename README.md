@@ -12,6 +12,8 @@ This repo is laid out so that it matches as closely as possible the actual on-di
 | `styles/freecad-dark/` | `styles/freecad-dark/` in the phpBB root | the `FreeCAD-Dark` style, child of `prosilver` |
 | `freecad-assets/` | `freecad-assets/` in the phpBB root, served at `/freecad-assets/` | Bootstrap 3.3.5 CSS and JS, the site fonts, `freecad.css`, and the favicons, shared by both styles |
 
+`deploy/deploy-forum-style.sh` is the server-side deployment script and `.github/workflows/deploy.yaml` the workflow that runs it; neither is deployed to the forum. The server runs an installed copy of the script, which an administrator updates by hand when it changes here.
+
 ## Making Changes
 
 Please submit changes as normal pull requests to this repo. Changes reach the forum only when a project Maintainer or forums manager explicitly runs the deployment workflow. There is (currently) no staging or test server available, all changes go directly to the live forum.

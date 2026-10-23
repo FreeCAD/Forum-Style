@@ -1,0 +1,5 @@
+# Changes to the deployment tooling need approval from the FreeCAD
+# maintainers: these files decide what runs on the forum server and in the
+# deployment workflow. This file is under .github/, so it is covered too.
+/deploy/   @FreeCAD/maintainers
+/.github/  @FreeCAD/maintainers
