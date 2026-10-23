@@ -767,6 +767,9 @@ ul.linklist.bulletin > li.no-bulletin:before {
 .dropdown-container {
   position: relative; }
 
+.dropdown-container > .dropdown {
+  display: none; }
+
 .dropdown-container-right {
   float: right; }
 
